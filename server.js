@@ -3,7 +3,7 @@ const app = express()
 const port = 8080
 
 app.get('/', (req, res) => {
-  res.redirect('ytechnologies.org')
+  res.redirect('http://ytechnologies.org/')
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
