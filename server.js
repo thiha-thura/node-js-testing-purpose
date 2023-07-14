@@ -3,7 +3,7 @@ const app = express()
 const port = 8080
 
 app.get('/', (req, res) => {
-  res.redirect('http://ytechnologies.org/')
+  res.send('Working as Root')
 })
 app.get('/health', (req,res) => {
   res.send('Your Container is UP and Running')
