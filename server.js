@@ -3,7 +3,7 @@ const app = express()
 const port = 8080
 
 app.get('/', (req, res) => {
-  res.send('NODE is working as well.!!')
+  res.send('NODE-JS is working!! ')
 })
 app.get('/health', (req,res) => {
   res.send('Your Container is UP and Running')
