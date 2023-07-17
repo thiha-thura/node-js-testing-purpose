@@ -1,11 +1,12 @@
 const express = require('express')
 const app = express()
 const port = 8080
+i = 0
 
 app.get('/', (req, res) => {
-  res.send('Node is working!!-(hc removed) ')
+  res.send((i++)+'Node is working!! ')
 })
-app.get('/live ', (req,res) => {
+app.get('/liveness ', (req,res) => {
   res.send('Your Container is UP and Running')
 })
 app.listen(port, () => {
